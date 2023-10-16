@@ -31,7 +31,7 @@
             </div>
 
             <div class="mb-3 text-center ">
-            <input type="button" class="btn btn-success col-12" value="Register">
+            <input type="submit" class="btn btn-success col-12" name="register" value="Register">
             </div>
         </form>
     </div>
