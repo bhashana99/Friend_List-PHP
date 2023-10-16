@@ -16,14 +16,18 @@
 
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="" >
+                <input type="password" class="form-control" id="password" name="password"  >
             </div>
-
             
             <div class="mb-3">
-                <label for="password" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="" >
+                <label for="cpassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="cpassword" name="cpassword" >
             </div>
+
+            <div class="d-flex justify-content-end mb-3">
+                <a href="#" style="text-decoration: none;">I already have an account.</a>
+            </div>
+
         </form>
     </div>
 </div>
