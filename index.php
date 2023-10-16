@@ -7,7 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="bg-primary py-3">
+        <h1 >&nbsp;My Friend System</h1>
+        <link rel="stylesheet" href="style.css">
+    </div>
     
 
 
