@@ -66,6 +66,9 @@ if(isset($_POST['login'])){
         header('Location: home.php');
 
 
+   }else{
+    $_SESSION['lmsg'] = " * email or password incorrect";
+    header('Location: login.php');
    }
 
     
