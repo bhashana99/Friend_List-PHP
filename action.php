@@ -14,7 +14,7 @@ $pass2 = $_POST['cpassword'];
 if($query->checkUserExist($email)){
 
 }else{
-
+    echo '<script>document.getElementById("form-error").innerHTML =  "<p class="text-danger">Email already exists<p>";</script>';
 }
 
 
