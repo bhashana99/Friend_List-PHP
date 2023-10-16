@@ -28,6 +28,9 @@
                 <a href="./login.php" style="text-decoration: none;">I already have an account.</a>
             </div>
 
+            <div class="mb-3 text-center ">
+            <input type="button" class="btn btn-success col-12" value="Register">
+            </div>
         </form>
     </div>
 </div>
