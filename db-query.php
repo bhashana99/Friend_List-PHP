@@ -11,6 +11,13 @@ class Query extends Database{
         return true;
         
     }
+
+    public function saveUser($email,$username,$password){
+        $sql = "INSERT INTO users (email,username,password) VALUES (:email,:username,:password)";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute(['email'=> $email,'username'=>$username,'password'=>$password]);
+        return true;
+    }
 }
 
 
