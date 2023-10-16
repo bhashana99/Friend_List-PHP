@@ -7,10 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <div class="bg-primary py-3">
-        <h1 >&nbsp;My Friend System</h1>
-        <link rel="stylesheet" href="style.css">
-    </div>
+   <?php require_once './header.php'; ?>
 
         <div class="card text-center mt-5 mx-auto" style="width: 40vw;" >
             <div class="card-body ">
