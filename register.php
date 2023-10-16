@@ -25,7 +25,7 @@
             </div>
 
             <div class="d-flex justify-content-end mb-3">
-                <a href="#" style="text-decoration: none;">I already have an account.</a>
+                <a href="./login.php" style="text-decoration: none;">I already have an account.</a>
             </div>
 
         </form>
