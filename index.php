@@ -1,5 +1,13 @@
+<?php 
+   session_start();
+   require_once './header.php';
+    $_SESSION['msg'] = '';
+    $_SESSION['email'] = '' ;
+    $_SESSION['username'] = '' ;
+    $_SESSION['pass1'] = '' ;
+    $_SESSION['pass2'] = '' ;
 
-   <?php require_once './header.php'; ?>
+    ?>
 
         <div class="card text-center mt-5 mx-auto" style="width: 40vw;" >
             <div class="card-body ">

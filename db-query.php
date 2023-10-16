@@ -8,7 +8,8 @@ class Query extends Database{
         $sql = "SELECT email FROM users WHERE email=:email" ;
         $stmt = $this->conn->prepare($sql);
         $stmt->execute(['email'=> $email]);
-        return true;
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result;
         
     }
 
