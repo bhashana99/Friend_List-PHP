@@ -19,6 +19,15 @@ class Query extends Database{
         $stmt->execute(['email'=> $email,'username'=>$username,'password'=>$password]);
         return true;
     }
+
+    public function checkUsernameExist($username){
+        $sql = "SELECT username FROM users WHERE username=:username" ;
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute(['username'=> $username]);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result;
+        
+    }
 }
 
 

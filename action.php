@@ -20,22 +20,26 @@ $_SESSION['email'] = '' ;
 
 if(!$query->checkUserExist($email)){
     $_SESSION['msg'] = '';
+    if(!$query->checkUsernameExist($username)){
+        echo 'done';
+    }else{
+        $_SESSION['msg'] = "* username already exist";
+        header('Location: register.php');
     
-    $query->saveUser($email,$username,$pass1);
-    header('Location: index.php');
-    
+    }
+       
 }else{
 
-    $_SESSION['email'] = $email ;
-    $_SESSION['username'] = $username ;
-    $_SESSION['pass1'] = $pass1 ;
-    $_SESSION['pass2'] = $pass2 ;
-    $_SESSION['msg'] = "Email-already exist";
+    $_SESSION['msg'] = " * email-already exist";
     header('Location: register.php');
    
 
 }
 
+    $_SESSION['email'] = $email ;
+    $_SESSION['username'] = $username ;
+    $_SESSION['pass1'] = $pass1 ;
+    $_SESSION['pass2'] = $pass2 ;
 
 
 }
