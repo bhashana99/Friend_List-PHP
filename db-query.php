@@ -28,6 +28,14 @@ class Query extends Database{
         return $result;
         
     }
+
+    public function checkPassword($email,$password){
+        $sql = "SELECT email,password FROM users WHERE email=:email AND password=:password" ;
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute(['email'=> $email,'password'=>$password]);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    }
 }
 
 

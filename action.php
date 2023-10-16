@@ -50,6 +50,26 @@ if(!$query->checkUserExist($email)){
 
 }
 
+if(isset($_POST['login'])){
+    // print_r($_POST);
+    $lemail = $_POST['lemail'];
+    $lpassword = $_POST['lpassword'];
+
+    $isUser = $query->checkPassword($lemail,$lpassword);
+
+    // print_r($isUser);
+   if($isUser != null){
+        $_SESSION['userEmail'] = $isUser['email'];
+        // print_r($_SESSION['userEmail']);
+        header('Location: home.php');
+
+
+   }
+
+    
+
+}
+
 
 
 ?>
