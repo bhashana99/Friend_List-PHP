@@ -1,4 +1,7 @@
 <?php
+require_once './db-query.php';
+
+$query = new Query();
 
 if(isset($_POST['register']) ){
     
@@ -8,11 +11,13 @@ $username = $_POST['username'];
 $pass1 = $_POST['password']; 
 $pass2 = $_POST['cpassword']; 
 
+if($query->checkUserExist($email)){
 
-if($pass1 == $pass1){
-    $hpass = password_hash($pass1,PASSWORD_DEFAULT);
+}else{
 
 }
+
+
 
 }
 
