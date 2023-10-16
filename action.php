@@ -57,6 +57,7 @@ if(isset($_POST['login'])){
 
     $isUser = $query->checkPassword($lemail,$lpassword);
 
+    $_SESSION['lmsg'] = "";
     // print_r($isUser);
    if($isUser != null){
         $_SESSION['userEmail'] = $isUser['email'];
@@ -70,6 +71,7 @@ if(isset($_POST['login'])){
     $_SESSION['lmsg'] = " * email or password incorrect";
     header('Location: login.php');
    }
+   
 
     
 

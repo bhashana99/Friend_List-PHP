@@ -4,6 +4,7 @@
    require_once './header.php';
 
     $_SESSION['msg'] = '';
+    $_SESSION['lmsg'] = '';
     $_SESSION['email'] = '' ;
     $_SESSION['username'] = '' ;
     $_SESSION['pass1'] = '' ;

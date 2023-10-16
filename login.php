@@ -1,6 +1,8 @@
 <?php
+session_start();
  require_once './header.php'; 
  
+ $msg = $_SESSION['lmsg'];
  ?>
 
 
@@ -8,7 +10,7 @@
     <h2 class="mt-5 text-center text-success">Sign in </h2>
     <div class="col-md-4 mt-5 mx-auto" class="text-center">    
         <div id="form-error">
-            <p class="text-danger"><?php  ?></p>
+            <p class="text-danger"><?php echo $msg; ?></p>
         </div>
         <form method="post" action="./action.php">
             <div class="mb-3">
