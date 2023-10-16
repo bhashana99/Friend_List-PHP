@@ -13,7 +13,7 @@ $spass2=$_SESSION['pass2'];
 
 <div class="container">
     <h2 class="mt-5 text-center text-success">Registration </h2>
-    <div class="col-md-4 mt-5 mx-auto" class="text-center">
+    <div class="col-md-4 mt-5 mx-auto" class="text-center">    
         <div id="form-error">
             <p class="text-danger"><?php echo $msg; ?></p>
         </div>
@@ -43,7 +43,8 @@ $spass2=$_SESSION['pass2'];
             </div>
 
             <div class="mb-3 text-center ">
-            <button class="btn btn-success col-12" name="register" value="Register">Register</button>
+               <button class="btn btn-success col-12 mb-2" name="register" value="Register">Register</button>
+                 <a href="./index.php" class=" text-secondary" >Back to home page</a>
             </div>
         </form>
     </div>
