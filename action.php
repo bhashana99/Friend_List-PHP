@@ -60,6 +60,8 @@ if(isset($_POST['login'])){
     // print_r($isUser);
    if($isUser != null){
         $_SESSION['userEmail'] = $isUser['email'];
+        $_SESSION['userNof'] = $isUser['number_of_friends'];
+        $_SESSION['username'] = $isUser['username'];
         // print_r($_SESSION['userEmail']);
         header('Location: home.php');
 

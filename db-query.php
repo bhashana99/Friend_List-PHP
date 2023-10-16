@@ -30,7 +30,7 @@ class Query extends Database{
     }
 
     public function checkPassword($email,$password){
-        $sql = "SELECT email,password FROM users WHERE email=:email AND password=:password" ;
+        $sql = "SELECT * FROM users WHERE email=:email AND password=:password" ;
         $stmt = $this->conn->prepare($sql);
         $stmt->execute(['email'=> $email,'password'=>$password]);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
