@@ -36,6 +36,14 @@ class Query extends Database{
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         return $result;
     }
+
+    public function fetchAllUsers($username){
+        $sql = "SELECT * FROM users WHERE username != :username " ;
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute(['username'=>$username]);
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
 }
 
 
